@@ -1,0 +1,15 @@
+# Custom Dictionary Words
+distpath
+DOTFILE
+dotfiles
+esbenp
+martokk
+onefile
+pyinstaller
+pylint
+rgba
+titlebar
+vappcore
+vapps
+venv
+workpath
