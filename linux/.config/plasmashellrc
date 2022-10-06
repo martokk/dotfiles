@@ -1,0 +1,41 @@
+[KFileDialog Settings]
+Recent Files[$e]=2143.jpg,file:///media/martokk/FILES/Applications/Obsidian-0.14.6.png,file:///media/martokk/FILES/Pictures/Wallpapers/4k/2143.jpg
+Recent URLs[$e]=file:///media/martokk/FILES/Pictures/Wallpapers/4k/,file:///media/martokk/FILES/Applications/,file:$HOME/
+detailViewIconSize=16
+iconViewIconSize=512
+
+[KPropertiesDialog]
+eDP Height 3840x2160=573
+eDP Width 3840x2160=660
+eDP-1 Height 3840x2160=574
+eDP-1 Width 3840x2160=607
+
+[PlasmaViews][Panel 2][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 2][Horizontal3840]
+thickness=44
+
+[PlasmaViews][Panel 26][Defaults]
+thickness=60
+
+[PlasmaViews][Panel 26][Horizontal3840]
+thickness=60
+
+[PlasmaViews][Panel 49][Defaults]
+thickness=49
+
+[PlasmaViews][Panel 49][Horizontal3840]
+thickness=49
+
+[PlasmaViews][Panel 49][Vertical2160]
+thickness=97
+
+[PlasmaViews][Panel 54][Defaults]
+thickness=42
+
+[PlasmaViews][Panel 54][Horizontal3840]
+thickness=42
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js
