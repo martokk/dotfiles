@@ -1,5 +1,5 @@
 # Dotfiles
-
+This Makefile will install dotfiles by creating synlinks to the dotfiles in this repo.
 
 # Profiles
 - **core**: Core dotfiles installed on every machine
