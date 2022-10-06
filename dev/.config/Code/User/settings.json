@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "Breeze Dark",
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#8a4700"
   },
@@ -6,7 +7,8 @@
   "files.autoSave": "onFocusChange",
   "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "editor.lineHeight": 1.6,
+  "editor.lineHeight": 1.4,
+  "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -22,9 +24,12 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "python.venvFolders": ["venv"],
+  "python.defaultInterpreterPath": "python3.10",
+  "python.terminal.focusAfterLaunch": true,
   "python.formatting.provider": "none",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.completeFunctionParens": true,
   "python.analysis.diagnosticSeverityOverrides": {
     "reportUnknownMemberType": "none",
     "reportUnknownVariableType": "none",
@@ -50,6 +55,7 @@
       "scope": "user"
     }
   },
+  "cSpell.ignoreWords": ["Cdthu", "Parens", "Pwpc", "tabmix"],
   "better-comments.tags": [
     {
       "tag": "!",
@@ -98,9 +104,5 @@
     }
   ],
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.7)",
-  "python.analysis.completeFunctionParens": true,
-  "python.defaultInterpreterPath": "python3.10",
-  "python.terminal.focusAfterLaunch": true,
-  "sourcery.token": "user_7Cdthu0q_RBu6j1MdM4n6L9ElHjQ0yH5iiPPwpcAnQD0HpU65lyp72lfMOk",
-  "workbench.colorTheme": "Breeze Dark"
+  "sourcery.token": "user_7Cdthu0q_RBu6j1MdM4n6L9ElHjQ0yH5iiPPwpcAnQD0HpU65lyp72lfMOk"
 }

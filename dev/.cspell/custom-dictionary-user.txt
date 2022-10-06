@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+Consolas
 distpath
 DOTFILE
 dotfiles
@@ -8,6 +9,7 @@ onefile
 pyinstaller
 pylint
 rgba
+sourcery
 titlebar
 vappcore
 vapps
