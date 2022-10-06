@@ -142,6 +142,9 @@ History Items[$e]=file:///media/martokk/FILES/VirtualBox VMs/KDE Neon,file:///me
 [General]
 BrowserApplication=brave-browser.desktop
 ColorSchemeHash=bcce7c1c6181c5e14e633cd8301e7a9036b67ac6
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=JetBrains Mono,10,-1,5,50,0,0,0,0,0
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
