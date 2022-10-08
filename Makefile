@@ -32,7 +32,7 @@ list:
 	@$(foreach val, $(DOTFILES), echo $(val)'   -->   $(HOME)/'$(shell echo $(val) | cut -d '/' -f 2- );)
 	@# @$(foreach val, $(DOTFILES), echo $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- )'   -->   '$(val);)
 
-install: ## Create symlink to home directory
+install: clean ## Create symlink to home directory
 	@echo '--------------------------------- '
 	@echo ' MAKE INSTALL                     '
 	@echo '--------------------------------- '
