@@ -27,6 +27,7 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
 {2cf03926-c236-47a2-a57b-ecf6ef25a523}=Meta+N,none,Quick Capture
+{7d1c9cb6-08bc-45d2-b105-557e26cfe4ce}=,none,New Action
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 {eb1c1da2-0a66-4db3-9d49-5e8398dd7adb}=none,none,New Action
 
@@ -267,8 +268,8 @@ cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
-next activity=Meta+Tab,Meta+Tab,Walk through activities
-previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
+next activity=Meta+Tab,none,Walk through activities
+previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
 repeat_action=Meta+Ctrl+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,,Show Barcode…

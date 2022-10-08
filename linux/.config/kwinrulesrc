@@ -2,7 +2,7 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
 [1]
-Description=Application settings for virtualbox machine
+Description=Virtualbox: Light Theme, Not Closable
 activity=09471140-6699-4ad7-8ae3-fcd865f2465d
 clientmachine=localhost
 closeablerule=2
@@ -11,16 +11,8 @@ decocolorrule=2
 wmclass=virtualbox machine
 wmclassmatch=1
 
-[16928f93-d3bb-41a0-b977-3c00e2c938a3]
-Description=Application settings for brave-browser
-activity=09471140-6699-4ad7-8ae3-fcd865f2465d
-activityrule=3
-clientmachine=localhost
-wmclass=brave-browser
-wmclassmatch=1
-
 [2]
-Description=Application settings for brave-browser
+Description=Brave ---> Default
 activity=09471140-6699-4ad7-8ae3-fcd865f2465d
 activityrule=3
 clientmachine=localhost
@@ -28,29 +20,33 @@ wmclass=brave-browser
 wmclassmatch=1
 
 [3]
-Description=Pycharm --> Dev
+Description=Brave-PiP ---> All
+activity=00000000-0000-0000-0000-000000000000
+activityrule=3
+position=0,1511
+positionrule=3
+size=1154,649
+sizerule=3
+title=Picture in picture
+titlematch=1
+wmclassmatch=1
+
+[4]
+Description=Pycharm ---> Dev
 activity=f9063583-dc3d-464f-9b3a-724c3047a9fd
 activityrule=3
 clientmachine=localhost
 wmclass=jetbrains-pycharm
 wmclassmatch=1
 
-[66b3a189-72a1-4648-8c59-a361d4cb8126]
-Description=Pycharm --> Dev
+[5]
+Description=VSCode ---> Dev
 activity=f9063583-dc3d-464f-9b3a-724c3047a9fd
 activityrule=3
 clientmachine=localhost
-wmclass=jetbrains-pycharm
+wmclass=code
 wmclassmatch=1
 
 [General]
-count=3
-rules=1,2,3
-
-[fc8cd95d-3c7c-4320-a7ed-27621ada8820]
-Description=Application settings for virtualbox machine
-clientmachine=localhost
-decocolor=BreezeLight
-decocolorrule=2
-wmclass=virtualbox machine
-wmclassmatch=1
+count=5
+rules=1,2,3,4,5
