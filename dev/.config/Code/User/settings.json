@@ -105,5 +105,21 @@
   ],
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.7)",
   "sourcery.token": "user_7Cdthu0q_RBu6j1MdM4n6L9ElHjQ0yH5iiPPwpcAnQD0HpU65lyp72lfMOk",
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "cSpell.dictionaries": [
+    "python",
+    "yaml",
+    "html",
+    "json",
+    "javascript",
+    "markdown",
+    "text"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/build": true,
+    "**/build_linux": true,
+    "**/build_win": true
+  }
 }

@@ -1,17 +1,25 @@
 # Custom Dictionary Words
+autoflake
 Consolas
+cookiecutter
+Cookiecutter
 distpath
+docstrings
 DOTFILE
 dotfiles
 esbenp
 martokk
+mkdocs
+mkdocstrings
 onefile
 pyinstaller
 pylint
+pytest
 rgba
 sourcery
 titlebar
 vappcore
 vapps
 venv
+Wolt
 workpath
