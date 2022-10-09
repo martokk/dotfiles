@@ -1,2 +1,5 @@
 [Compositing]
 OpenGLIsUnsafe=false
+
+[NightColor]
+Active=true
