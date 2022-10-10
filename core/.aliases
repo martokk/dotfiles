@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# --- vSERVER -----------------------------------------------------
+alias start_vserver="sh ~/Scripts/Shell/start_vserver_in_vm.sh"
+
 
 # --- QUICK FIXES ----------------------------------------------------------------
 # Fix Mouse Scroll Direction
