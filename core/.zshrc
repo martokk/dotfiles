@@ -79,5 +79,11 @@ source $ZSH/oh-my-zsh.sh
 
 # USER CONF HERE ----------------
 
-# Source .aliases
-source $HOME/.aliases
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/.path ]; then
+    . ~/.path
+fi
