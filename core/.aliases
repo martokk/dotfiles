@@ -25,7 +25,7 @@ alias restart_brave="killall brave && brave-browser && notify-send 'Brave restar
 
 # --- NAVIGATION ----------------------------------------------------------------
 alias cdi="cd /media/martokk/FILES/__INBOX__"
-alias cdd"cd /media/martokk/FILES/Dotfiles"
+alias cdd="cd /media/martokk/FILES/Dotfiles"
 alias cddl="cd /media/martokk/FILES/Downloads"
 alias cdp="cd /media/martokk/FILES/Projects"
 alias cds="cd /media/martokk/FILES/Servers"
