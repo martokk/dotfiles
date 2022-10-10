@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# --- vSERVER -----------------------------------------------------
+# --- SERVER COMMANDS -----------------------------------------------------
 alias start_vserver="sh ~/Scripts/Shell/start_vserver_in_vm.sh"
 
 
@@ -23,10 +23,11 @@ alias restart_brave="killall brave && brave-browser && notify-send 'Brave restar
 
 
 # --- NAVIGATION ----------------------------------------------------------------
-alias cdi="cd ~/__INBOX__"
-alias cdd"cd ~/Dotfiles"
-alias cddl="cd ~/Downloads"
-alias cdp="cd ~/Projects"
+alias cdi="cd /media/martokk/FILES/__INBOX__"
+alias cdd"cd /media/martokk/FILES/Dotfiles"
+alias cddl="cd /media/martokk/FILES/Downloads"
+alias cdp="cd /media/martokk/FILES/Projects"
+alias cds="cd /media/martokk/FILES/Servers"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
