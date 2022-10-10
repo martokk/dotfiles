@@ -2,7 +2,7 @@
 
 # --- SERVER COMMANDS -----------------------------------------------------
 alias start_vserver="sh ~/Scripts/Shell/start_vserver_in_vm.sh"
-
+alias ssh_vserver="ssh vserver@192.168.0.223"
 
 # --- QUICK FIXES ----------------------------------------------------------------
 # Fix Mouse Scroll Direction
