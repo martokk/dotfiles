@@ -1,5 +1,14 @@
 [Compositing]
 OpenGLIsUnsafe=false
 
+[Desktops]
+Id_1=8356a158-572d-48b3-b808-f6539db8b2f2
+Number=1
+Rows=1
+
 [NightColor]
 Active=true
+LatitudeAuto=43.0382
+LongitudeAuto=-87.91
+Mode=Times
+NightTemperature=4100

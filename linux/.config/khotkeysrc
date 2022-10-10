@@ -1065,6 +1065,9 @@ History Items[$d]
 BrowserApplication[$d]
 ColorScheme[$d]
 ColorSchemeHash[$d]
+XftHintStyle[$d]
+XftSubPixel[$d]
+fixed[$d]
 
 [Gestures]
 Disabled=true

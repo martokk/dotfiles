@@ -1,5 +1,6 @@
 # Custom Dictionary Words
 autoflake
+codestyle
 Consolas
 cookiecutter
 Cookiecutter
@@ -17,6 +18,7 @@ pylint
 pytest
 rgba
 sourcery
+tada
 titlebar
 vappcore
 vapps

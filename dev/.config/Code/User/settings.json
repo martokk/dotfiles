@@ -121,5 +121,8 @@
     "**/build": true,
     "**/build_linux": true,
     "**/build_win": true
+  },
+  "files.associations": {
+    "*.yml": "jinja-yaml"
   }
 }
