@@ -4,6 +4,7 @@ This Makefile will install dotfiles by creating synlinks to the dotfiles in this
 # Profiles
 - **core**: Core dotfiles installed on every machine
 - **dev**: Dev dotfiles (VSCode, Jetbrains, etc)
+- **server**: Server dotfiles (AWS, Docker, etc)
 - **linux**: Linux OS Instance dotfiles (KDE Neon, Ubuntu)
 
 

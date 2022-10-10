@@ -10,6 +10,8 @@ else ifeq ($(profile), dev)
 	PROFILE_PATHS := ./core ./dev
 
 # route profile=server
+else ifeq ($(profile), server)
+	PROFILE_PATHS := ./core ./server
 
 # route profile=linux
 else
