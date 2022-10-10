@@ -1,10 +1,17 @@
 SHELL=/bin/sh
 LOCAL_REPO := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 
+# route profile=core
 ifeq ($(profile), core)
 	PROFILE_PATHS := ./core
+
+# route profile=dev
 else ifeq ($(profile), dev)
 	PROFILE_PATHS := ./core ./dev
+
+# route profile=server
+
+# route profile=linux
 else
 	PROFILE_PATHS := ./core ./dev ./linux
 endif
