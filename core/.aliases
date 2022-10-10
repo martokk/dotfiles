@@ -2,8 +2,8 @@
 
 # --- SERVER COMMANDS -----------------------------------------------------
 alias start_vserver="sh ~/Scripts/Shell/start_vserver_in_vm.sh"
-alias ssh_vserver="ssh vserver@192.168.0.223"
-alias ssh_aws="ssh ubuntu@ec2-54-208-22-61.compute-1.amazonaws.com"
+alias ssh_vserver="ssh vserver@vserver"
+alias ssh_aws="ssh ubuntu@aws-server"
 
 # --- QUICK FIXES ----------------------------------------------------------------
 # Fix Mouse Scroll Direction
