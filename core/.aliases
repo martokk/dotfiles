@@ -1,9 +1,12 @@
 #!/bin/bash
 
 # --- SERVER COMMANDS -----------------------------------------------------
-alias start_vserver="sh ~/Scripts/Shell/start_vserver_in_vm.sh"
 alias ssh_vserver="ssh vserver@vserver"
 alias ssh_aws="ssh ubuntu@aws-server"
+
+alias start_vserver="sh ~/Scripts/Shell/start_vserver_in_vm.sh"
+
+alias sync_aws="unison aws-server"
 
 # --- QUICK FIXES ----------------------------------------------------------------
 # Fix Mouse Scroll Direction
@@ -80,3 +83,5 @@ alias hosts='sudo nano /etc/hosts'
 
 
 # --- OTHER ----------------------------------------------------------------
+# print colors
+alias print_colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$"\n"}; done '
