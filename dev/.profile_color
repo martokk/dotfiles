@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Grey
 #export MAIN_COLOR=240
 #export DARK_MAIN_COLOR=236
@@ -18,8 +17,3 @@ export DARK_MAIN_COLOR=54
 # Blue
 # export MAIN_COLOR=4
 # export DARK_MAIN_COLOR=33
-
-=======
-export MAIN_COLOR=92
-export DARK_MAIN_COLOR=54
->>>>>>> master
