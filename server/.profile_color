@@ -1,1 +1,2 @@
-MAIN_COLOR=1
+export MAIN_COLOR=1
+export DARK_MAIN_COLOR=52
