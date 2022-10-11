@@ -81,10 +81,19 @@ source $ZSH/oh-my-zsh.sh
 # USER CONF HERE ----------------
 
 
+
 if [ -f ~/.aliases ]; then
     source ~/.aliases
 fi
 
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+
 if [ -f ~/.path ]; then
     source ~/.path
+fi
+
+if [ -f ~/.notes ]; then
+    source ~/.notes
 fi
