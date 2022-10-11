@@ -19,7 +19,7 @@ else
 endif
 
 EXCLUSIONS := README.md .gitignore Makefile
-CANDIDATES := $(shell find $(PROFILE_PATHS) -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2- )
+CANDIDATES := "$(shell find $(PROFILE_PATHS) -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2- )"
 DOTFILES=${CANDIDATES}
 # DOTFILES := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
