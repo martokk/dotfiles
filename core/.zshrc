@@ -18,6 +18,7 @@ plugins=(
   sudo
   zsh-autosuggestions
   zsh-syntax-highlighting
+  colored-man-pages
 )
 
 # Options
