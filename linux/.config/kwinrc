@@ -10,5 +10,4 @@ Rows=1
 Active=true
 LatitudeAuto=43.0382
 LongitudeAuto=-87.91
-Mode=Times
-NightTemperature=4100
+NightTemperature=3200

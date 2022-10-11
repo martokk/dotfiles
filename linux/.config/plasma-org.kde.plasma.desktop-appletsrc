@@ -72,7 +72,7 @@ DialogHeight=840
 DialogWidth=1120
 
 [Containments][26][Applets][29][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:brave-browser.desktop,file:///snap/pycharm-professional/237/jbr/bin/java,applications:code.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:gimp.desktop,applications:inkscape.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:appimagekit_7d57422e511a0b4cee7159eb6db19b1d-Telegram_Desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:Redbubble Uploader.desktop,applications:Society6 Uploader.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:systemsettings.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:brave-browser.desktop,applications:code.desktop,applications:gitkraken.desktop,applications:libreoffice-calc.desktop,applications:gimp.desktop,applications:inkscape.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:appimagekit_7d57422e511a0b4cee7159eb6db19b1d-Telegram_Desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:Redbubble Uploader.desktop,applications:Society6 Uploader.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:systemsettings.desktop
 maxStripes=1
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
@@ -269,7 +269,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][58][Applets][68][Configuration]
-PreloadWeight=25
+PreloadWeight=30
 
 [Containments][58][Applets][69]
 immutability=1

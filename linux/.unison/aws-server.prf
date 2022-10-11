@@ -1,0 +1,7 @@
+# Unison preferences
+ignore = Path {credentials}
+ignore = Path {.credentials}
+label = AWS Server
+root = /media/martokk/FILES/Servers/aws-server
+root = ssh://ubuntu@aws-server//home/ubuntu
+sshargs = -C
