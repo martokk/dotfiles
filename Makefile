@@ -52,18 +52,18 @@ install: clean ## Create symlink to home directory
 	@echo '   SYMLINK      ->      SOURCE FILE '
 
 	# Create Symlinks
-	@$(foreach val, $(DOTFILES), mkdir -p $$(dirname $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- )); ln -sfnv $(abspath $(val)) $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- );)
+	@$(foreach val, $(DOTFILES), mkdir -p "$$(dirname $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- ))"; ln -sfnv "$(abspath $(val))" "$(HOME)/$(shell echo $(val) | cut -d '/' -f 2- )";)
 
 	# Refresh Font Cache
 	fc-cache -f
 
 clean: ## Remove the dot files and this repo
 	@echo 'Remove dot files in your home directory...'
-	@-$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- );)
+	@-$(foreach val, $(DOTFILES), rm -vrf "$(HOME)/$(shell echo $(val) | cut -d '/' -f 2- )";)
 
 remove: clean
 	@echo 'Remove local repo...'
-	-rm -rf $(DOTPATH)
+	-rm -rf "$(DOTPATH)"
 
 help: ## Self-documented Makefile
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
