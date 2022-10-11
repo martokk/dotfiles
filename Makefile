@@ -20,7 +20,8 @@ endif
 
 EXCLUSIONS := README.md .gitignore Makefile
 CANDIDATES := $(shell find $(PROFILE_PATHS) -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2- )
-DOTFILES := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
+DOTFILES=${CANDIDATES}
+# DOTFILES := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
 .DEFAULT_GOAL := help
 
