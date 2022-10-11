@@ -52,7 +52,7 @@ install: clean ## Create symlink to home directory
 	@echo '   SYMLINK      ->      SOURCE FILE '
 
 	# Create Symlinks
-	@$(foreach val, "$(DOTFILES)", mkdir -p "$$(dirname $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- ))"; ln -sfnv "$(abspath $(val))" "$(HOME)/$(shell echo $(val) | cut -d '/' -f 2- )";)
+	@$(foreach val, $(DOTFILES), mkdir -p "$$(dirname $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- ))"; ln -sfnv "$(abspath $(val))" "$(HOME)/$(shell echo $(val) | cut -d '/' -f 2- )";)
 
 	# Refresh Font Cache
 	fc-cache -f
