@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FOLDERS=(".aliases" ".functions")
-FILES=(".path" ".aliases" ".alias" ".functions" ".funcs" ".bash_aliases" ".bash_functions" ".profile_color" ".notes")
+FILES=(".path" ".aliases" ".alias" ".functions" ".funcs" ".bash_aliases" ".bash_functions" ".profile_color")
 
 # Source All Files in Folders
 for FOLDER in "${FOLDERS[@]}"; do
