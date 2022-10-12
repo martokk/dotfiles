@@ -248,7 +248,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][58][Applets][66][Configuration]
-PreloadWeight=30
+PreloadWeight=45
 
 [Containments][58][Applets][66][Configuration][ConfigDialog]
 DialogHeight=840
@@ -262,14 +262,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][58][Applets][67][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 
 [Containments][58][Applets][68]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][58][Applets][68][Configuration]
-PreloadWeight=30
+PreloadWeight=35
 
 [Containments][58][Applets][69]
 immutability=1
@@ -293,7 +293,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][58][Applets][71][Configuration]
-PreloadWeight=89
+PreloadWeight=100
 
 [Containments][58][Applets][72]
 immutability=1

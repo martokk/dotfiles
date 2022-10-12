@@ -9,6 +9,7 @@ docstrings
 DOTFILE
 dotfiles
 esbenp
+Jetbrains
 martokk
 mkdocs
 mkdocstrings
