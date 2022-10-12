@@ -80,10 +80,10 @@ for DOTFILE in $DOTFILES; do
 
     if [ $SIMULATE == 1 ]; then
         mkdir -p "$PARENT_PATH"
-        ln -sfnv "$TARGET" "$LINK_NAME"
+        "ln -sfnv $TARGET $LINK_NAME"
     else
         echo "mkdir -p $PARENT_PATH"
-        echo "ln -sfnv '$TARGET' '$LINK_NAME'"
+        echo "ln -sfnv $TARGET $LINK_NAME"
     fi
 
     # #mkdir -p "$$(dirname $(HOME)/$(shell echo $(val) | cut -d '/' -f 2- ))"
