@@ -30,7 +30,6 @@ plugins=(
   web-search
   copypath
   dirhistory
-  zsh_reload
   history
   alias-finder
   aliases
