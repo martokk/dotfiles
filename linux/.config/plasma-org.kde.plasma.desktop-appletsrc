@@ -248,7 +248,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][58][Applets][66][Configuration]
-PreloadWeight=45
+PreloadWeight=60
 
 [Containments][58][Applets][66][Configuration][ConfigDialog]
 DialogHeight=840
