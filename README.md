@@ -1,25 +1,27 @@
-# Dotfiles
+# Martokk's Dotfiles
 
-This Makefile will install dotfiles by creating symlinks to the dotfiles in this repo.
+Install's Martokk's dotfiles by creating symlinks to the dotfiles in this repo.
 
-# Profiles
+### Available Profiles
 
 - **core**: Core dotfiles installed on every machine
 - **dev**: Dev dotfiles (VSCode, Jetbrains, etc)
 - **server**: Server dotfiles (AWS, Docker, etc)
 - **linux**: Linux OS Instance dotfiles (KDE Neon, Ubuntu)
 
-# Installing Methods
+# Install
 
-### Install via Curl command (Recommended):
+## Install via Curl command (Recommended):
 
 ```shell
-run `sh -c "$(curl -fsSL https://raw.github.com/martokk/dotfiles/master/install.sh)" "" core`
+sh -c "$(curl -fsSL https://raw.github.com/martokk/dotfiles/master/install.sh)" "" core
 ```
 
-# Install via Script
+---
 
-- Clone this repo into a local folder.
+## Install via Script or Makefile
+
+Clone this repo into a local folder.
 
 ```shell
 git clone https://github.com/martokk/dotfiles ~/dotfiles
@@ -32,7 +34,7 @@ cd ~/dotfiles
 bash ./install.sh core
 ```
 
-### Install via Makefile
+### OR: Install via Makefile
 
 ```shell
 cd ~/dotfiles
