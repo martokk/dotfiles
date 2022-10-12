@@ -14,7 +14,7 @@ Install's Martokk's dotfiles by creating symlinks to the dotfiles in this repo.
 ## Install via Curl command (Recommended):
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/martokk/dotfiles/master/install.sh)" "" core
+bash -c "$(curl -fsSL https://raw.github.com/martokk/dotfiles/master/install.sh)" "" core
 ```
 
 ---

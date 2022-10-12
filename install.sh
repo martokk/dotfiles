@@ -40,7 +40,7 @@ git clone https://github.com/martokk/dotfiles "$DOTFILES_REPO"
 cd "$DOTFILES_REPO" || exit 1
 
 # Get all dotfiles from PROFILE_PATHS
-DOTFILES=$(find "${PROFILE_PATHS[@]}" -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2- | sed 's: :\\ :g')
+DOTFILES=$(find "${PROFILE_PATHS[@]}" -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2-)
 
 echo "--------------------------------- "
 echo " INSTALL DOTFILE                  "
@@ -80,7 +80,7 @@ for DOTFILE in $DOTFILES; do
 
     if [ $SIMULATE == 1 ]; then
         mkdir -p "$PARENT_PATH"
-        ln -sfnv $TARGET $LINK_NAME
+        ln -sfnv "$TARGET" "$LINK_NAME"
     else
         echo "mkdir -p $PARENT_PATH"
         echo "ln -sfnv $TARGET $LINK_NAME"
