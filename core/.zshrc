@@ -25,7 +25,18 @@ plugins=(
   sudo
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-completions
   colored-man-pages
+  web-search
+  copypath
+  dirhistory
+  zsh_reload
+  history
+  alias-finder
+  aliases
+  docker-compose
+  poetry
+  thefuck
 )
 
 # Options
