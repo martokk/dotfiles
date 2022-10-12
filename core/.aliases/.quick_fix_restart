@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------------
+#  QUICK FIXES
+# -------------------------------------------------------------------------
+# Fix Mouse Scroll Direction
+alias fix_mouse="sh ~/Scripts/Shell/fix_mouse_natural_scroll_direction.sh && notify-send 'Mouse scroll direction set.'"
+
+# Fix Cracking Audio by resetting the pusleaudio profile
+alias fix_audio="pactl set-card-profile 1 off; sleep 0.5; pactl set-card-profile 1 output:analog-stereo && notify-send 'Audio Reset'"
+
+# -------------------------------------------------------------------------
+#  QUICK RESTARTS
+# -------------------------------------------------------------------------
+# Restart Plasmashell
+alias restart_plasmashell="killall plasmashell && kstart5 plasmashell && notify-send 'Plasmashell restarted.'"

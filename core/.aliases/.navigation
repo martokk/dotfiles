@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------------
+# CD INTO FAVORITES
+# -------------------------------------------------------------------------
+alias cdi="cd /media/martokk/FILES/__INBOX__"
+alias cdd="cd /media/martokk/FILES/Dotfiles"
+alias cddl="cd /media/martokk/FILES/Downloads"
+alias cdp="cd /media/martokk/FILES/Projects"
+alias cds="cd /media/martokk/FILES/Servers"
+
+# -------------------------------------------------------------------------
+# NAVIGATION HELPERS
+# -------------------------------------------------------------------------
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"

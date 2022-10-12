@@ -1,0 +1,32 @@
+#!/bin/bash
+
+FOLDERS=(".aliases" ".functions")
+FILES=(".path" ".aliases" ".alias" ".functions" ".funcs" ".bash_aliases" ".bash_functions" ".profile_color" ".notes")
+
+# Source All Files in Folders
+for FOLDER in "${FOLDERS[@]}"; do
+    FOLDER="$PWD/$FOLDER"
+    # echo "FOLDER=$FOLDER"
+    if [ -d "$FOLDER" ]; then
+        # echo "attempting source files in folder: $FOLDER"
+        for FILE in "$FOLDER/".*; do
+            # echo "FILE=$FILE"
+            if [ -f "$FILE" ]; then
+                # echo "sourcing file: $FILE"
+                # shellcheck disable=1090
+                source "$FILE"
+            fi
+        done
+    fi
+done
+
+# Source Files
+for FILE in "${FILES[@]}"; do
+    FILE="$PWD/$FILE"
+    # echo "FILE=$FILE"
+    if [ -f "$FILE" ]; then
+        # echo "sourcing file: $FILE"
+        # shellcheck disable=1090
+        source "$FILE"
+    fi
+done

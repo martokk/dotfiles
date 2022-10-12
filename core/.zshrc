@@ -81,19 +81,19 @@ ZSH_DISABLE_COMPFIX="true"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f ~/.aliases ]; then
-    source ~/.aliases
+if [ -f ~/.sources ]; then
+    source ~/.sources
+else
+    if [ -f ~/.aliases ]; then
+        source ~/.bash_aliases
+    fi
+    if [ -f ~/.bash_aliases ]; then
+        source ~/.bash_aliases
+    fi
+    if [ -f ~/.path ]; then
+        source ~/.path
+    fi
 fi
-
-if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi
-
-if [ -f ~/.path ]; then
-    source ~/.path
-fi
-
-
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
