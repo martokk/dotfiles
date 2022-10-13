@@ -1,7 +1,22 @@
 # clear
 # neofetch
-if [ -f ~/.notes ]; then
-    source ~/.notes
+cd $HOME
+if [[ -f $HOME/.notes ]]; then
+    source $HOME/.notes
+fi
+
+if [[ -f $HOME/.sources ]]; then
+    source $HOME/.sources
+else
+    if [[ -f $HOME/.aliases ]]; then
+        source $HOME/.aliases
+    fi
+    if [[ -f $HOME/.bash_aliases ]]; then
+        source $HOME/.bash_aliases
+    fi
+    if [[ -f $HOME/.path ]]; then
+        source $HOME/.path
+    fi
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -86,23 +101,11 @@ ZSH_DISABLE_COMPFIX="true"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f ~/.sources ]; then
-    source ~/.sources
-else
-    if [ -f ~/.aliases ]; then
-        source ~/.aliases
-    fi
-    if [ -f ~/.bash_aliases ]; then
-        source ~/.bash_aliases
-    fi
-    if [ -f ~/.path ]; then
-        source ~/.path
-    fi
-fi
+
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 source $ZSH/oh-my-zsh.sh
 
 # USER CONF HERE ----------------
