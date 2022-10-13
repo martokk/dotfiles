@@ -90,7 +90,7 @@ if [ -f ~/.sources ]; then
     source ~/.sources
 else
     if [ -f ~/.aliases ]; then
-        source ~/.bash_aliases
+        source ~/.aliases
     fi
     if [ -f ~/.bash_aliases ]; then
         source ~/.bash_aliases
