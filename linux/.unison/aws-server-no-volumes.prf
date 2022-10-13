@@ -35,3 +35,5 @@ label = AWS Server (with Volumes)
 root = /media/martokk/FILES/Servers/aws-server
 root = ssh://ubuntu@aws-server//home/ubuntu
 sshargs = -C
+
+ignore = Path {volumes/portainer/portainer.db}
