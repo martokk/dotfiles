@@ -33,3 +33,6 @@ label = AWS Server
 root = /media/martokk/FILES/Servers/aws-server
 root = ssh://ubuntu@aws-server//home/ubuntu
 sshargs = -C
+
+ignore = Path {.functions}
+ignore = Path {.sources}
