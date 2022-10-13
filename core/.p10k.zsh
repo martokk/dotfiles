@@ -23,22 +23,25 @@ export ZSH_MAIN_COLOR={$ZSH_MAIN_COLOR:240}
 export ZSH_DARK_COLOR={$ZSH_MAIN_COLOR:236}
 
 # Set ZSH Color from $ZSH_COLOR_NAME
-if [ $ZSH_COLOR_NAME == 'purple' ]; then
+if [ $ZSH_COLOR_NAME = 'grey' ]; then
+  export ZSH_MAIN_COLOR=240
+  export ZSH_DARK_COLOR=236
+elif [ $ZSH_COLOR_NAME = 'purple' ]; then
   export ZSH_MAIN_COLOR=92
   export ZSH_DARK_COLOR=54
-elif [ $ZSH_COLOR_NAME == 'green' ]; then
+elif [ $ZSH_COLOR_NAME = 'green' ]; then
   export ZSH_MAIN_COLOR=34
   export ZSH_DARK_COLOR=28
-elif [ $ZSH_COLOR_NAME == 'red' ]; then
+elif [ $ZSH_COLOR_NAME = 'red' ]; then
   export ZSH_MAIN_COLOR=1
   export ZSH_DARK_COLOR=52
-elif [ $ZSH_COLOR_NAME == 'blue' ]; then
+elif [ $ZSH_COLOR_NAME = 'blue' ]; then
   export ZSH_MAIN_COLOR=4
   export ZSH_DARK_COLOR=33
-elif [ $ZSH_COLOR_NAME == 'orange' ]; then
+elif [ $ZSH_COLOR_NAME = 'orange' ]; then
   export ZSH_MAIN_COLOR=208
   export ZSH_DARK_COLOR=202
-elif [ $ZSH_COLOR_NAME == 'yellow' ]; then
+elif [ $ZSH_COLOR_NAME = 'yellow' ]; then
   export ZSH_MAIN_COLOR=226
   export ZSH_DARK_COLOR=11
 fi
