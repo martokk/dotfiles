@@ -31,6 +31,18 @@ title=Picture in picture
 titlematch=1
 wmclassmatch=1
 
+[32ec62fc-650a-4433-8abb-3185a0509f0e]
+Description=Brave-PiP: Size & Position
+ignoregeometry=true
+ignoregeometryrule=2
+position=0,1602
+positionrule=3
+size=885,498
+sizerule=3
+title=Picture in picture
+titlematch=1
+wmclassmatch=1
+
 [4]
 Description=@Dev - Pycharm
 activity=f9063583-dc3d-464f-9b3a-724c3047a9fd
@@ -49,7 +61,7 @@ wmclassmatch=1
 
 [General]
 count=7
-rules=1,2,3,be871bd7-7480-4de0-9aaf-d9b9c930d7a7,4,b549b93e-5bcb-44fe-951a-28867dabb6b6,5
+rules=1,32ec62fc-650a-4433-8abb-3185a0509f0e,2,3,4,b549b93e-5bcb-44fe-951a-28867dabb6b6,5
 
 [b549b93e-5bcb-44fe-951a-28867dabb6b6]
 Description=@Dev - GitKraken
@@ -57,16 +69,4 @@ activity=f9063583-dc3d-464f-9b3a-724c3047a9fd
 activityrule=3
 clientmachine=localhost
 wmclass=gitkraken
-wmclassmatch=1
-
-[be871bd7-7480-4de0-9aaf-d9b9c930d7a7]
-Description=Copy of @All - Brave-PiP
-activity=00000000-0000-0000-0000-000000000000
-activityrule=3
-position=0,1511
-positionrule=3
-size=1154,649
-sizerule=3
-title=Picture in picture
-titlematch=1
 wmclassmatch=1
