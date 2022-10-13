@@ -44,8 +44,8 @@ elif [ $ZSH_COLOR_NAME = 'orange' ]; then
   export ZSH_DARK_COLOR=202
   export ZSH_ICON_COLOR=0
 elif [ $ZSH_COLOR_NAME = 'yellow' ]; then
-  export ZSH_MAIN_COLOR=226
-  export ZSH_DARK_COLOR=11
+  export ZSH_MAIN_COLOR=190
+  export ZSH_DARK_COLOR=226
   export ZSH_ICON_COLOR=0
 fi
 
@@ -263,10 +263,10 @@ fi
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=250
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=${ZSH_ICON_COLOR:-254}
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=${ZSH_ICON_COLOR:-254}
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
