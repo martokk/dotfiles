@@ -1,0 +1,4 @@
+# Unison preferences
+label = Sync VSCode & Code Server profile
+root = /media/martokk/FILES/Projects/dotfiles/dev/.config/Code/User
+root = /media/martokk/FILES/Projects/dotfiles/dev/.local/share/code-server/User
