@@ -13,11 +13,6 @@ fi
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Initalize ZSH
-if [ -f ~/.profile_color ]; then
-    source ~/.profile_color
-fi
-
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(

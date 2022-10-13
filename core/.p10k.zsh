@@ -10,13 +10,38 @@
 # Type `p10k configure` to generate your own config based on it.
 #
 # Tip: Looking for a nice color? Here's a one-liner to print colormap.
-#
 #   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
-if [ -f ~/.profile_color ]; then
-    source ~/.profile_color
+# Load ENV VARIABLES
+if [ -f ~/.env ]; then
+    # export ~/.env variables
+    export $(grep -v '^#' ~/.env | xargs)
 fi
 
+# Default Colors (grey/white) (overriden by ~.env OR $ZSH_COLOR_NAME)
+export ZSH_MAIN_COLOR={$ZSH_MAIN_COLOR:240}
+export ZSH_DARK_COLOR={$ZSH_MAIN_COLOR:236}
+
+# Set ZSH Color from $ZSH_COLOR_NAME
+if [ $ZSH_COLOR_NAME == 'purple' ]; then
+  export ZSH_MAIN_COLOR=92
+  export ZSH_DARK_COLOR=54
+elif [ $ZSH_COLOR_NAME == 'green' ]; then
+  export ZSH_MAIN_COLOR=34
+  export ZSH_DARK_COLOR=28
+elif [ $ZSH_COLOR_NAME == 'red' ]; then
+  export ZSH_MAIN_COLOR=1
+  export ZSH_DARK_COLOR=52
+elif [ $ZSH_COLOR_NAME == 'blue' ]; then
+  export ZSH_MAIN_COLOR=4
+  export ZSH_DARK_COLOR=33
+elif [ $ZSH_COLOR_NAME == 'orange' ]; then
+  export ZSH_MAIN_COLOR=208
+  export ZSH_DARK_COLOR=202
+elif [ $ZSH_COLOR_NAME == 'yellow' ]; then
+  export ZSH_MAIN_COLOR=226
+  export ZSH_DARK_COLOR=11
+fi
 
 # Temporarily change options.
 'builtin' 'local' '-a' 'p10k_config_opts'
@@ -165,7 +190,7 @@ fi
   if [[ $POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR != ' ' ]]; then
     # The color of the filler. You'll probably want to match the color of POWERLEVEL9K_MULTILINE
     # ornaments defined above.
-    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=${DARK_MAIN_COLOR:-238}
+    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=${ZSH_DARK_COLOR:-238}
     # Start filler from the edge of the screen if there are no left segments on the first line.
     typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_FIRST_SEGMENT_END_SYMBOL='%{%}'
     # End filler on the edge of the screen if there are no right segments on the first line.
@@ -194,7 +219,7 @@ fi
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=254
-  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=${DARK_MAIN_COLOR:-26}
+  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=${ZSH_DARK_COLOR:-26}
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
 
@@ -223,7 +248,7 @@ fi
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Default current directory foreground color.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
   # If directory is too long, shorten some of its segments to the shortest possible unique
@@ -332,21 +357,21 @@ fi
   #
   #   # Styling for WORK.
   #   typeset -g POWERLEVEL9K_DIR_WORK_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_DIR_WORK_BACKGROUND=${MAIN_COLOR:-4}
+  #   typeset -g POWERLEVEL9K_DIR_WORK_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   #   typeset -g POWERLEVEL9K_DIR_WORK_FOREGROUND=254
   #   typeset -g POWERLEVEL9K_DIR_WORK_SHORTENED_FOREGROUND=250
   #   typeset -g POWERLEVEL9K_DIR_WORK_ANCHOR_FOREGROUND=255
   #
   #   # Styling for WORK_NOT_WRITABLE.
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_BACKGROUND=${MAIN_COLOR:-4}
+  #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_FOREGROUND=254
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_SHORTENED_FOREGROUND=250
   #   typeset -g POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_ANCHOR_FOREGROUND=255
   #
   #   # Styling for WORK_NON_EXISTENT.
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_VISUAL_IDENTIFIER_EXPANSION='⭐'
-  #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_BACKGROUND=${MAIN_COLOR:-4}
+  #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_FOREGROUND=254
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_SHORTENED_FOREGROUND=250
   #   typeset -g POWERLEVEL9K_DIR_WORK_NON_EXISTENT_ANCHOR_FOREGROUND=255
@@ -647,13 +672,13 @@ fi
 
   # Python version from asdf.
   typeset -g POWERLEVEL9K_ASDF_PYTHON_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ASDF_PYTHON_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_ASDF_PYTHON_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # typeset -g POWERLEVEL9K_ASDF_PYTHON_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_PYTHON_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Go version from asdf.
   typeset -g POWERLEVEL9K_ASDF_GOLANG_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ASDF_GOLANG_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_ASDF_GOLANG_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # typeset -g POWERLEVEL9K_ASDF_GOLANG_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_GOLANG_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -677,13 +702,13 @@ fi
 
   # Flutter version from asdf.
   typeset -g POWERLEVEL9K_ASDF_FLUTTER_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ASDF_FLUTTER_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_ASDF_FLUTTER_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # typeset -g POWERLEVEL9K_ASDF_FLUTTER_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_FLUTTER_SHOW_ON_UPGLOB='*.foo|*.bar'
 
   # Lua version from asdf.
   typeset -g POWERLEVEL9K_ASDF_LUA_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ASDF_LUA_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_ASDF_LUA_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # typeset -g POWERLEVEL9K_ASDF_LUA_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_LUA_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -695,7 +720,7 @@ fi
 
   # Perl version from asdf.
   typeset -g POWERLEVEL9K_ASDF_PERL_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ASDF_PERL_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_ASDF_PERL_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # typeset -g POWERLEVEL9K_ASDF_PERL_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # typeset -g POWERLEVEL9K_ASDF_PERL_SHOW_ON_UPGLOB='*.foo|*.bar'
 
@@ -738,7 +763,7 @@ fi
   ##########[ nordvpn: nordvpn connection status, linux only (https://nordvpn.com/) ]###########
   # NordVPN connection indicator color.
   typeset -g POWERLEVEL9K_NORDVPN_FOREGROUND=7
-  typeset -g POWERLEVEL9K_NORDVPN_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_NORDVPN_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Hide NordVPN connection indicator when not connected.
   typeset -g POWERLEVEL9K_NORDVPN_{DISCONNECTED,CONNECTING,DISCONNECTING}_CONTENT_EXPANSION=
   typeset -g POWERLEVEL9K_NORDVPN_{DISCONNECTED,CONNECTING,DISCONNECTING}_VISUAL_IDENTIFIER_EXPANSION=
@@ -783,7 +808,7 @@ fi
   #[ nix_shell: nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html) ]##
   # Nix shell color.
   typeset -g POWERLEVEL9K_NIX_SHELL_FOREGROUND=0
-  typeset -g POWERLEVEL9K_NIX_SHELL_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_NIX_SHELL_BACKGROUND=${ZSH_MAIN_COLOR:-4}
 
   # Tip: If you want to see just the icon without "pure" and "impure", uncomment the next line.
   # typeset -g POWERLEVEL9K_NIX_SHELL_CONTENT_EXPANSION=
@@ -815,7 +840,7 @@ fi
   typeset -g POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND=2
   # Text and color for visual vi mode.
   typeset -g POWERLEVEL9K_VI_VISUAL_MODE_STRING=VISUAL
-  typeset -g POWERLEVEL9K_VI_MODE_VISUAL_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_VI_MODE_VISUAL_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Text and color for overtype (a.k.a. overwrite and replace) vi mode.
   typeset -g POWERLEVEL9K_VI_OVERWRITE_MODE_STRING=OVERTYPE
   typeset -g POWERLEVEL9K_VI_MODE_OVERWRITE_BACKGROUND=3
@@ -926,13 +951,13 @@ fi
 
   ##################################[ context: user@hostname ]##################################
   # Context color when running with privileges.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=${DARK_MAIN_COLOR:-26}
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=${ZSH_DARK_COLOR:-26}
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=254
   # Context color in SSH without privileges.
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=${DARK_MAIN_COLOR:-26}
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=${ZSH_DARK_COLOR:-26}
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=254
   # Default context color (no privileges, no SSH).
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=${DARK_MAIN_COLOR:-26}
+  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=${ZSH_DARK_COLOR:-26}
   typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=254
   # Context format when running with privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
@@ -953,7 +978,7 @@ fi
   ###[ virtualenv: python virtual environment (https://docs.python.org/3/library/venv.html) ]###
   # Python virtual environment color.
   typeset -g POWERLEVEL9K_VIRTUALENV_FOREGROUND=0
-  typeset -g POWERLEVEL9K_VIRTUALENV_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_VIRTUALENV_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Don't show Python version next to the virtual environment name.
   typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=false
   # If set to "false", won't show virtualenv if pyenv is already shown.
@@ -967,7 +992,7 @@ fi
   #####################[ anaconda: conda environment (https://conda.io/) ]######################
   # Anaconda environment color.
   typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=0
-  typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=${ZSH_MAIN_COLOR:-4}
 
   # Anaconda segment format. The following parameters are available within the expansion.
   #
@@ -1001,7 +1026,7 @@ fi
   ################[ pyenv: python environment (https://github.com/pyenv/pyenv) ]################
   # Pyenv color.
   typeset -g POWERLEVEL9K_PYENV_FOREGROUND=0
-  typeset -g POWERLEVEL9K_PYENV_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_PYENV_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Hide python version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_PYENV_SOURCES=(shell local global)
   # If set to false, hide python version if it's the same as global:
@@ -1028,7 +1053,7 @@ fi
   ################[ goenv: go environment (https://github.com/syndbg/goenv) ]################
   # Goenv color.
   typeset -g POWERLEVEL9K_GOENV_FOREGROUND=0
-  typeset -g POWERLEVEL9K_GOENV_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_GOENV_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Hide go version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_GOENV_SOURCES=(shell local global)
   # If set to false, hide go version if it's the same as global:
@@ -1177,14 +1202,14 @@ fi
   ###########[ fvm: flutter version management (https://github.com/leoafarias/fvm) ]############
   # Fvm color.
   typeset -g POWERLEVEL9K_FVM_FOREGROUND=0
-  typeset -g POWERLEVEL9K_FVM_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_FVM_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Custom icon.
   # typeset -g POWERLEVEL9K_FVM_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ##########[ luaenv: lua version from luaenv (https://github.com/cehoffman/luaenv) ]###########
   # Lua color.
   typeset -g POWERLEVEL9K_LUAENV_FOREGROUND=0
-  typeset -g POWERLEVEL9K_LUAENV_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_LUAENV_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Hide lua version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_LUAENV_SOURCES=(shell local global)
   # If set to false, hide lua version if it's the same as global:
@@ -1212,7 +1237,7 @@ fi
   ###########[ plenv: perl version from plenv (https://github.com/tokuhirom/plenv) ]############
   # Perl color.
   typeset -g POWERLEVEL9K_PLENV_FOREGROUND=0
-  typeset -g POWERLEVEL9K_PLENV_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_PLENV_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Hide perl version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_PLENV_SOURCES=(shell local global)
   # If set to false, hide perl version if it's the same as global:
@@ -1308,13 +1333,13 @@ fi
       # '*prod*'  PROD    # These values are examples that are unlikely
       # '*test*'  TEST    # to match your needs. Customize them as needed.
       '*'         OTHER)
-  typeset -g POWERLEVEL9K_TERRAFORM_OTHER_FOREGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_TERRAFORM_OTHER_FOREGROUND=${ZSH_MAIN_COLOR:-4}
   typeset -g POWERLEVEL9K_TERRAFORM_OTHER_BACKGROUND=0
   # typeset -g POWERLEVEL9K_TERRAFORM_OTHER_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   #############[ terraform_version: terraform version (https://www.terraform.io) ]##############
   # Terraform version color.
-  typeset -g POWERLEVEL9K_TERRAFORM_VERSION_FOREGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_TERRAFORM_VERSION_FOREGROUND=${ZSH_MAIN_COLOR:-4}
   typeset -g POWERLEVEL9K_TERRAFORM_VERSION_BACKGROUND=0
   # Custom icon.
   # typeset -g POWERLEVEL9K_TERRAFORM_VERSION_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -1466,7 +1491,7 @@ fi
   typeset -g POWERLEVEL9K_AZURE_SHOW_ON_COMMAND='az|terraform|pulumi|terragrunt'
   # Azure account name color.
   typeset -g POWERLEVEL9K_AZURE_FOREGROUND=7
-  typeset -g POWERLEVEL9K_AZURE_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_AZURE_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Custom icon.
   # typeset -g POWERLEVEL9K_AZURE_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
@@ -1476,7 +1501,7 @@ fi
   typeset -g POWERLEVEL9K_GCLOUD_SHOW_ON_COMMAND='gcloud|gcs|gsutil'
   # Google cloud color.
   typeset -g POWERLEVEL9K_GCLOUD_FOREGROUND=7
-  typeset -g POWERLEVEL9K_GCLOUD_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_GCLOUD_BACKGROUND=${ZSH_MAIN_COLOR:-4}
 
   # Google cloud format. Change the value of POWERLEVEL9K_GCLOUD_PARTIAL_CONTENT_EXPANSION and/or
   # POWERLEVEL9K_GCLOUD_COMPLETE_CONTENT_EXPANSION if the default is too verbose or not informative
@@ -1548,7 +1573,7 @@ fi
       # '*:*test*:*'  TEST    # to match your needs. Customize them as needed.
       '*'             DEFAULT)
   typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_FOREGROUND=7
-  typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # typeset -g POWERLEVEL9K_GOOGLE_APP_CRED_DEFAULT_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   # Use POWERLEVEL9K_GOOGLE_APP_CRED_CONTENT_EXPANSION to specify the content displayed by
@@ -1604,7 +1629,7 @@ fi
 
   ###########[ ip: ip address and bandwidth usage for a specified network interface ]###########
   # IP color.
-  typeset -g POWERLEVEL9K_IP_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_IP_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   typeset -g POWERLEVEL9K_IP_FOREGROUND=0
   # The following parameters are accessible within the expansion:
   #
@@ -1627,7 +1652,7 @@ fi
 
   #########################[ proxy: system-wide http/https/ftp proxy ]##########################
   # Proxy color.
-  typeset -g POWERLEVEL9K_PROXY_FOREGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_PROXY_FOREGROUND=${ZSH_MAIN_COLOR:-4}
   typeset -g POWERLEVEL9K_PROXY_BACKGROUND=0
   # Custom icon.
   # typeset -g POWERLEVEL9K_PROXY_VISUAL_IDENTIFIER_EXPANSION='⭐'
@@ -1649,7 +1674,7 @@ fi
   #####################################[ wifi: wifi speed ]#####################################
   # WiFi color.
   typeset -g POWERLEVEL9K_WIFI_FOREGROUND=0
-  typeset -g POWERLEVEL9K_WIFI_BACKGROUND=${MAIN_COLOR:-4}
+  typeset -g POWERLEVEL9K_WIFI_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Custom icon.
   # typeset -g POWERLEVEL9K_WIFI_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
