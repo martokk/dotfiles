@@ -11,3 +11,6 @@ Active=true
 LatitudeAuto=43.0382
 LongitudeAuto=-87.91
 NightTemperature=3200
+
+[Plugins]
+sticky-window-snappingEnabled=true
