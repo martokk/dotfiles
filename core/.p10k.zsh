@@ -19,8 +19,9 @@ if [ -f ~/.env ]; then
 fi
 
 # Default Colors (grey/white) (overriden by ~.env OR $ZSH_COLOR_NAME)
-export ZSH_MAIN_COLOR={$ZSH_MAIN_COLOR:240}
-export ZSH_DARK_COLOR={$ZSH_MAIN_COLOR:236}
+export ZSH_MAIN_COLOR={$ZSH_MAIN_COLOR:-240}
+export ZSH_DARK_COLOR={$ZSH_MAIN_COLOR:-236}
+export ZSH_ICON_COLOR=${ZSH_ICON_COLOR:-254}
 
 # Set ZSH Color from $ZSH_COLOR_NAME
 if [ $ZSH_COLOR_NAME = 'grey' ]; then
@@ -33,17 +34,19 @@ elif [ $ZSH_COLOR_NAME = 'green' ]; then
   export ZSH_MAIN_COLOR=34
   export ZSH_DARK_COLOR=28
 elif [ $ZSH_COLOR_NAME = 'red' ]; then
-  export ZSH_MAIN_COLOR=1
-  export ZSH_DARK_COLOR=52
+  export ZSH_MAIN_COLOR=124
+  export ZSH_DARK_COLOR=88
 elif [ $ZSH_COLOR_NAME = 'blue' ]; then
   export ZSH_MAIN_COLOR=4
   export ZSH_DARK_COLOR=33
 elif [ $ZSH_COLOR_NAME = 'orange' ]; then
   export ZSH_MAIN_COLOR=208
   export ZSH_DARK_COLOR=202
+  export ZSH_ICON_COLOR=0
 elif [ $ZSH_COLOR_NAME = 'yellow' ]; then
   export ZSH_MAIN_COLOR=226
   export ZSH_DARK_COLOR=11
+  export ZSH_ICON_COLOR=0
 fi
 
 # Temporarily change options.
@@ -221,7 +224,7 @@ fi
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=254
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=${ZSH_ICON_COLOR:-254}
   typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=${ZSH_DARK_COLOR:-26}
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
@@ -253,7 +256,7 @@ fi
   # Current directory background color.
   typeset -g POWERLEVEL9K_DIR_BACKGROUND=${ZSH_MAIN_COLOR:-4}
   # Default current directory foreground color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=${ZSH_ICON_COLOR:-254}
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
@@ -955,13 +958,13 @@ fi
   ##################################[ context: user@hostname ]##################################
   # Context color when running with privileges.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=${ZSH_DARK_COLOR:-26}
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=254
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=${ZSH_ICON_COLOR:-254}
   # Context color in SSH without privileges.
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=${ZSH_DARK_COLOR:-26}
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=254
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=${ZSH_ICON_COLOR:-254}
   # Default context color (no privileges, no SSH).
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=${ZSH_DARK_COLOR:-26}
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=254
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=${ZSH_ICON_COLOR:-254}
   # Context format when running with privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
   # Context format when in SSH without privileges: user@hostname.
