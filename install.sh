@@ -96,4 +96,4 @@ echo "--------------------------------- "
 fc-cache -f
 
 printf "\n\nComplete. Dotfiles have been linked to home directory"
-exec zsh
+chsh -s "$(which zsh)"
