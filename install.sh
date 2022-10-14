@@ -36,9 +36,9 @@ else
 fi
 
 # Clone dotfiles repo locally
-git clone https://github.com/martokk/dotfiles "$DOTFILES_REPO" || git pull
-cd "$DOTFILES_REPO" || echo "could not cd into repo. exiting."
-exit 1
+git clone https://github.com/martokk/dotfiles "$DOTFILES_REPO" || echo ""
+
+cd "$DOTFILES_REPO" || exit 1
 
 # Get all dotfiles from PROFILE_PATHS
 DOTFILES=$(find "${PROFILE_PATHS[@]}" -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2-)
@@ -96,3 +96,4 @@ echo "--------------------------------- "
 fc-cache -f
 
 printf "\n\nComplete. Dotfiles have been linked to home directory"
+exec zsh
