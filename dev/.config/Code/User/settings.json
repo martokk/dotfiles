@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Breeze Dark",
+  "workbench.colorTheme": "Breeze Dark, Default Dark+",
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#8a4700"
   },
@@ -15,7 +15,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "MesloLGS NF, JetBrains Mono, Consolas, 'Courier New', monospace",
   "files.exclude": {
     "**/__pycache__": true,
     "**/.pytest_cache": true,
