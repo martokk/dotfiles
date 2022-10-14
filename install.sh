@@ -36,8 +36,9 @@ else
 fi
 
 # Clone dotfiles repo locally
-git clone https://github.com/martokk/dotfiles "$DOTFILES_REPO"
-cd "$DOTFILES_REPO" || exit 1
+git clone https://github.com/martokk/dotfiles "$DOTFILES_REPO" || git pull
+cd "$DOTFILES_REPO" || echo "could not cd into repo. exiting."
+exit 1
 
 # Get all dotfiles from PROFILE_PATHS
 DOTFILES=$(find "${PROFILE_PATHS[@]}" -not -path "*/.git/*" -not -name ".*swp" -type f | cut -d '/' -f 2-)
@@ -54,7 +55,7 @@ echo "--------------------------------- "
 printf "\nInstalling dependencies...\n"
 echo "--------------------------------- "
 if [ $SIMULATE == 1 ]; then
-    sudo apt install fontconfig zsh thefuck -y
+    sudo apt update && sudo apt install fontconfig zsh thefuck -y
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
