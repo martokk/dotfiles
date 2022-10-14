@@ -1,3 +1,6 @@
 [user]
 	email = 25113632+martokk@users.noreply.github.com
 	name = martokk
+[safe]
+	directory = /config/dotfiles
+	directory = /config/dotfiles
