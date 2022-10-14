@@ -169,5 +169,8 @@
   "peacock.affectPanelBorder": true,
   "peacock.affectEditorGroupBorder": true,
   "peacock.affectDebuggingStatusBar": true,
-  "peacock.surpriseMeOnStartup": true
+  "peacock.surpriseMeOnStartup": true,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
