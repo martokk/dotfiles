@@ -1,5 +1,10 @@
 default_context:
     full_name: "Martokk"
+    name: "Martokk"
     email: "25113632+martokk@users.noreply.github.com"
     github_username: "martokk"
+    github_name: "martokk"
+    organization: "v3services"
+    minimal_python_version: "3.10"
+    line_length: 79
 cookiecutters_dir: "~/dev/templates/cookiecutter/"
