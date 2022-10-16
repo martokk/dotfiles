@@ -1,0 +1,5 @@
+default_context:
+    full_name: "Martokk"
+    email: "25113632+martokk@users.noreply.github.com"
+    github_username: "martokk"
+cookiecutters_dir: "~/dev/templates/cookiecutter/"
