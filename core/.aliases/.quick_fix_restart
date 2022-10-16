@@ -7,7 +7,8 @@
 alias fix_mouse="sh ~/Scripts/Shell/fix_mouse_natural_scroll_direction.sh && notify-send 'Mouse scroll direction set.'"
 
 # Fix Cracking Audio by resetting the pusleaudio profile
-alias fix_audio="pactl set-card-profile 1 off; sleep 0.5; pactl set-card-profile 1 output:analog-stereo && notify-send 'Audio Reset'"
+# alias fix_audio="pactl set-card-profile 1 off; sleep 0.5; pactl set-card-profile 1 output:analog-stereo && notify-send 'Audio Reset'"
+alias fix_audio="pulseaudio --kill && pulseaudio --start"
 
 # -------------------------------------------------------------------------
 #  QUICK RESTARTS
