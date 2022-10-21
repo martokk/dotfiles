@@ -1,6 +1,6 @@
 # clear
 # neofetch
-cd $HOME
+
 if [[ -f $HOME/.notes ]]; then
     source $HOME/.notes
 fi
