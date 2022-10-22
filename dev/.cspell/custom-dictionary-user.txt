@@ -9,6 +9,7 @@ blueman
 bpytop
 brightnessctl
 browsercookie
+centralwidget
 chromedriver
 codestyle
 colour
@@ -39,6 +40,7 @@ loguru
 lxml
 Mandalorian
 martokk
+Meslo
 mkdocs
 mkdocstrings
 ncdu
@@ -47,13 +49,16 @@ ntfs
 onefile
 patool
 Pintrest
+Pixmap
 powerline
 powertop
 ppas
 pyenv
 pyinstaller
 pylint
+pyqt
 pytest
+pyuic
 pyupgrade
 qdirstat
 quicknote
