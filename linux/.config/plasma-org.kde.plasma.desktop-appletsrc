@@ -45,7 +45,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][26][Applets][27][Configuration]
-PreloadWeight=94
+PreloadWeight=100
 popupHeight=778
 popupWidth=995
 
@@ -74,7 +74,7 @@ DialogHeight=840
 DialogWidth=1120
 
 [Containments][26][Applets][29][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:appimagekit_7d57422e511a0b4cee7159eb6db19b1d-Telegram_Desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:Redbubble Uploader.desktop,applications:Society6 Uploader.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop,applications:com.github.wwmm.pulseeffects.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:io.qt.Designer.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:appimagekit_7d57422e511a0b4cee7159eb6db19b1d-Telegram_Desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:Redbubble Uploader.desktop,applications:Society6 Uploader.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop,applications:com.github.wwmm.pulseeffects.desktop
 maxStripes=1
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
@@ -138,7 +138,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][54][Applets][57][Configuration]
-PreloadWeight=94
+PreloadWeight=100
 SystrayContainmentId=58
 
 [Containments][54][Applets][73]
@@ -255,7 +255,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][58][Applets][65][Configuration]
-PreloadWeight=84
+PreloadWeight=100
 
 [Containments][58][Applets][65][Configuration][General]
 allDevices=true
