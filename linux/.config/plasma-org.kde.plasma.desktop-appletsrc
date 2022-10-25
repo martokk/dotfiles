@@ -185,7 +185,7 @@ immutability=1
 plugin=com.github.prayag2.controlcentre
 
 [Containments][54][Applets][81][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 
 [Containments][54][ConfigDialog]
 DialogHeight=109
@@ -281,7 +281,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][58][Applets][67][Configuration]
-PreloadWeight=66
+PreloadWeight=86
 
 [Containments][58][Applets][68]
 immutability=1
@@ -336,7 +336,7 @@ DialogWidth=1120
 PreloadWeight=0
 
 [Containments][58][General]
-extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,Yakuake
+extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol
 hiddenItems=Yakuake,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.kupapplet,org.kde.plasma.vault
 knownItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol
 shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.devicenotifier
@@ -409,4 +409,4 @@ SlidePaths=/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212
+screenMapping=desktop:/steam.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212
