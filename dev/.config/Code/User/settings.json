@@ -174,7 +174,8 @@
   "yaml.format.printWidth": 100,
 
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnType": true
   },
   "python.venvFolders": [".venv"],
   "python.terminal.focusAfterLaunch": true,
@@ -191,11 +192,13 @@
   },
   "python.linting.enabled": true,
   "python.linting.pep8Args": ["--max-line-length=100"],
+  "python.linting.pylintPath": "${workspaceFolder}/.venv/bin/pylint",
   "python.linting.pylintEnabled": true,
   "python.linting.pylintArgs": [
     "--extension-pkg-whitelist=PyQt5",
     "--disable=C0111",
-    "--disable=too-many-arguments" // Missing Docstrings
+    "--disable=too-many-arguments",
+    "--good-names=e,ex,ui,i,x,y,xx,yy,xy,x0,x1,y0,y1,f"
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": ["--max-line-length=100"],

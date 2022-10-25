@@ -23,6 +23,7 @@ distpath
 docstrings
 DOTFILE
 dotfiles
+earthlynature
 esbenp
 espanso
 filelock
@@ -40,9 +41,11 @@ loguru
 lxml
 Mandalorian
 martokk
+maxsplit
 Meslo
 mkdocs
 mkdocstrings
+msgbox
 ncdu
 neofetch
 ntfs
