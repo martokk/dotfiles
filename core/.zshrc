@@ -21,7 +21,7 @@ fi
 
 
 # Pyenv
-if [[ command -v pyenv &> /dev/null ]]; then
+if [[ `command -v pyenv` ]]; then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
