@@ -73,7 +73,7 @@
    </metadata>
   </info>
  </bookmark>
- <bookmark href="file:///media/martokk/FILES/Dotfiles">
+ <bookmark href="file:///media/martokk/dotfiles">
   <title>Dotfiles</title>
   <info>
    <metadata owner="http://freedesktop.org">
@@ -84,7 +84,7 @@
    </metadata>
   </info>
  </bookmark>
- <bookmark href="file:///media/martokk/FILES/Downloads">
+ <bookmark href="file:///media/martokk/FILES/__INBOX__">
   <title>Downloads</title>
   <info>
    <metadata owner="http://freedesktop.org">
@@ -176,7 +176,7 @@
    </metadata>
   </info>
  </bookmark>
- <bookmark href="file:///media/martokk/FILES/Scripts">
+ <bookmark href="file:///media/martokk/FILES/dev/scripts">
   <title>Scripts</title>
   <info>
    <metadata owner="http://freedesktop.org">
@@ -187,7 +187,7 @@
    </metadata>
   </info>
  </bookmark>
- <bookmark href="file:///media/martokk/FILES/Servers">
+ <bookmark href="file:///media/martokk/FILES/dev/servers">
   <title>Servers</title>
   <info>
    <metadata owner="http://freedesktop.org">
@@ -231,72 +231,6 @@
    <metadata owner="http://www.kde.org">
     <ID>1662855054/5</ID>
     <isSystemItem>true</isSystemItem>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/FILES/v3services">
-  <title>v3services</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1662869021/0</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/FILES/v3services/AI%20Art">
-  <title>AI Art</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1662869029/1</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/FILES/v3services/AI%20Clipart">
-  <title>AI Clipart</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1662869033/2</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/FILES/v3services/Stores">
-  <title>Stores</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1662890228/0</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/ce2fb81f-38c5-4f7e-a88f-512f311c341d/__INBOX__Y">
-  <title>__INBOX__Y</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1664168580/1</ID>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/ce2fb81f-38c5-4f7e-a88f-512f311c341d/__Y__">
-  <title>__Y__</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1664168577/0</ID>
    </metadata>
   </info>
  </bookmark>
@@ -369,17 +303,6 @@
    <metadata owner="http://www.kde.org">
     <ID>1662855054/14</ID>
     <isSystemItem>true</isSystemItem>
-   </metadata>
-  </info>
- </bookmark>
- <bookmark href="file:///media/martokk/WINDOWS10/VAM">
-  <title>VAM</title>
-  <info>
-   <metadata owner="http://freedesktop.org">
-    <bookmark:icon name="inode-directory"/>
-   </metadata>
-   <metadata owner="http://www.kde.org">
-    <ID>1664644767/0</ID>
    </metadata>
   </info>
  </bookmark>
@@ -503,6 +426,14 @@
   <info>
    <metadata owner="http://www.kde.org">
     <UDI>/org/freedesktop/UDisks2/block_devices/mmcblk0p1</UDI>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </separator>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/nvme0n1p10</UDI>
     <isSystemItem>true</isSystemItem>
    </metadata>
   </info>

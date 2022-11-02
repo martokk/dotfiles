@@ -1,6 +1,8 @@
 [KPropertiesDialog]
 eDP Height 3840x2160=573
+eDP Height 3840x2160 eDP=587
 eDP Width 3840x2160=573
+eDP Width 3840x2160 eDP=605
 
 [PlasmaViews][Panel 26][Defaults]
 thickness=60

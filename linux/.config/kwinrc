@@ -13,4 +13,13 @@ LongitudeAuto=-87.91
 NightTemperature=3200
 
 [Plugins]
+bismuthEnabled=true
 sticky-window-snappingEnabled=true
+
+[Script-bismuth]
+maximizeSoleTile=true
+screenGapBottom=15
+screenGapLeft=15
+screenGapRight=15
+screenGapTop=15
+tileLayoutGap=15

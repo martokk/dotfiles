@@ -136,12 +136,12 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=1298,956
-History Items[$e]=file:///media/martokk/FILES/VirtualBox VMs/KDE Neon,file:///media/martokk/FILES/v3services
+DirSelectDialog Size=940,618
+History Items[$e]=file:///media/martokk/FILES/dev/servers,file:///media/martokk/FILES/dev/scripts,file:///media/martokk/WD_4TB,file:///media/martokk/WD_2TB,file:///media/martokk/SEAGATE_4TB,file:///media/martokk/FILES,file:///media/martokk/FILES/VirtualBox VMs/KDE Neon,file:///media/martokk/FILES/v3services
 
 [General]
 BrowserApplication=brave-browser.desktop
-ColorSchemeHash=bcce7c1c6181c5e14e633cd8301e7a9036b67ac6
+ColorSchemeHash=78952f1103f6f2c59b78c6ed5fa382c3f5ec18e7
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=JetBrains Mono,10,-1,5,50,0,0,0,0,0
@@ -158,7 +158,7 @@ Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
-Preview Width=466
+Preview Width=366
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true

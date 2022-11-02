@@ -74,7 +74,7 @@ DialogHeight=840
 DialogWidth=1120
 
 [Containments][26][Applets][29][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:io.qt.Designer.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:appimagekit_7d57422e511a0b4cee7159eb6db19b1d-Telegram_Desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:Redbubble Uploader.desktop,applications:Society6 Uploader.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop,applications:com.github.wwmm.pulseeffects.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:io.qt.Designer.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:com.github.wwmm.pulseeffects.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop
 maxStripes=1
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
@@ -266,7 +266,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][58][Applets][66][Configuration]
-PreloadWeight=84
+PreloadWeight=89
 
 [Containments][58][Applets][66][Configuration][ConfigDialog]
 DialogHeight=840
@@ -281,14 +281,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][58][Applets][67][Configuration]
-PreloadWeight=86
+PreloadWeight=91
 
 [Containments][58][Applets][68]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][58][Applets][68][Configuration]
-PreloadWeight=11
+PreloadWeight=21
 
 [Containments][58][Applets][69]
 immutability=1
@@ -312,7 +312,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][58][Applets][71][Configuration]
-PreloadWeight=76
+PreloadWeight=81
 
 [Containments][58][Applets][72]
 immutability=1
@@ -409,4 +409,4 @@ SlidePaths=/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212
+screenMapping=desktop:/steam.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212

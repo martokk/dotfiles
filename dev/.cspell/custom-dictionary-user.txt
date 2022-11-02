@@ -3,6 +3,7 @@ apandada
 autoflake
 autouse
 azuretools
+beatport
 beautifulsoup
 bleachbit
 blueman
@@ -23,6 +24,7 @@ distpath
 docstrings
 DOTFILE
 dotfiles
+downloaders
 earthlynature
 esbenp
 espanso
@@ -50,6 +52,7 @@ ncdu
 neofetch
 ntfs
 onefile
+outtmpl
 patool
 Pintrest
 Pixmap
@@ -60,6 +63,7 @@ pyenv
 pyinstaller
 pylint
 pyqt
+pyright
 pytest
 pyuic
 pyupgrade
@@ -71,6 +75,8 @@ rgba
 rmlint
 scrcpy
 setuptools
+SOUNDCLOUD
+soundclouds
 sourcery
 speedtest
 sqlitebrowser
