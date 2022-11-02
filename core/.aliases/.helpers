@@ -4,4 +4,4 @@
 # HELPERS
 # -------------------------------------------------------------------------
 # Grep History
-alias gh='history|grep'
+alias hg='history|grep'
