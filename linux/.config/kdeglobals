@@ -136,7 +136,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=940,618
+DirSelectDialog Size=1584,951
 History Items[$e]=file:///media/martokk/FILES/dev/servers,file:///media/martokk/FILES/dev/scripts,file:///media/martokk/WD_4TB,file:///media/martokk/WD_2TB,file:///media/martokk/SEAGATE_4TB,file:///media/martokk/FILES,file:///media/martokk/FILES/VirtualBox VMs/KDE Neon,file:///media/martokk/FILES/v3services
 
 [General]

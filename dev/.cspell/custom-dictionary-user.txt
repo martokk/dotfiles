@@ -5,6 +5,7 @@ autouse
 azuretools
 beatport
 beautifulsoup
+bitchute
 bleachbit
 blueman
 bpytop
@@ -28,6 +29,7 @@ downloaders
 earthlynature
 esbenp
 espanso
+fastapi
 filelock
 flatpak
 gparted
@@ -51,6 +53,8 @@ msgbox
 ncdu
 neofetch
 ntfs
+odysee
+Odysee
 onefile
 outtmpl
 patool
