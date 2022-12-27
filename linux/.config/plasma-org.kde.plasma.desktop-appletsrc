@@ -74,7 +74,7 @@ DialogHeight=840
 DialogWidth=1120
 
 [Containments][26][Applets][29][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:io.qt.Designer.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:gimp.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:com.github.wwmm.pulseeffects.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop,file:///media/martokk/FILES/__INBOX__/SideQuest-0.10.33/sidequest
+launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:io.qt.Designer.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:gimp.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:org.telegram.desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:com.github.wwmm.pulseeffects.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop,file:///media/martokk/FILES/__INBOX__/SideQuest-0.10.33/sidequest
 maxStripes=1
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
@@ -153,7 +153,7 @@ immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][54][Applets][74][Configuration]
-PreloadWeight=10
+PreloadWeight=30
 
 [Containments][54][Applets][74][Configuration][ConfigDialog]
 DialogHeight=840
@@ -185,7 +185,7 @@ immutability=1
 plugin=com.github.prayag2.controlcentre
 
 [Containments][54][Applets][81][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 
 [Containments][54][ConfigDialog]
 DialogHeight=109
@@ -273,6 +273,7 @@ DialogHeight=840
 DialogWidth=1120
 
 [Containments][58][Applets][66][Configuration][General]
+currentTab=streams
 raiseMaximumVolume=true
 showVirtualDevices=true
 volumeFeedback=false
@@ -289,7 +290,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][58][Applets][68][Configuration]
-PreloadWeight=21
+PreloadWeight=31
 
 [Containments][58][Applets][69]
 immutability=1
@@ -303,7 +304,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][58][Applets][70][Configuration]
-PreloadWeight=11
+PreloadWeight=51
 
 [Containments][58][Applets][70][Configuration][General]
 showPercentage=true
@@ -410,4 +411,4 @@ SlidePaths=/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/steam.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd
+screenMapping=desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212,desktop:/steam.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/brave-eahfckgcigkbneedkjnelmaelbnkfcan-Profile_1.desktop,0,f9063583-dc3d-464f-9b3a-724c3047a9fd,desktop:/steam.desktop,0,d605e3d5-6f41-43be-8444-6268621bd212

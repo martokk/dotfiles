@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------
 # SSH INTO SERVERS
 # -------------------------------------------------------------------------
-alias ssh_aws="ssh ubuntu@aws-server"
+alias ssh_aws="ssh -i /media/martokk/FILES/Servers/aws-server/.credentials/aws-server.pem ubuntu@aws-server"
 alias ssh_vserver="ssh vserver@vserver"
 
 # -------------------------------------------------------------------------

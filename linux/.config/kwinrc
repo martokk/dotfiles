@@ -17,7 +17,6 @@ bismuthEnabled=true
 sticky-window-snappingEnabled=true
 
 [Script-bismuth]
-maximizeSoleTile=true
 screenGapBottom=15
 screenGapLeft=15
 screenGapRight=15

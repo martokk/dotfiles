@@ -4,6 +4,9 @@ eDP Height 3840x2160 eDP=587
 eDP Width 3840x2160=573
 eDP Width 3840x2160 eDP=605
 
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
 [PlasmaViews][Panel 26][Defaults]
 thickness=60
 

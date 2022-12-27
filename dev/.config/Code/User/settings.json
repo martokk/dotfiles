@@ -209,5 +209,9 @@
     ".vscode/*.py",
     "**/pyqt5_ui.py",
     "/media/martokk/FILES/dev/frameworks/workflow_manager/workflow_manager/pyqt5_ui.py"
-  ]
+  ],
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
