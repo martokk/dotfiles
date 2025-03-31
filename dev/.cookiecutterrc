@@ -5,6 +5,15 @@ default_context:
     github_username: "martokk"
     github_name: "martokk"
     organization: "v3services"
-    minimal_python_version: "3.10"
+    minimal_python_version: "3.12"
     line_length: 100
+    smtp_port: 587
+    smtp_host: "email-smtp.us-east-1.amazonaws.com"
+    smtp_user: "AKIAWBNARUA64C6ORMGG"
+    smtp_password: "BPCZGqRx0z8tJEpzdwFRNdioSF7UPT8bQNaq2FFrZP1g"
+    telegram_api_token: "5639115434:AAG3ExfMFyAenv4WjJvtzUgFvUjC3vG8Wz4"
+    telegram_chat_id: 5513084437
+    first_superuser_username: martokk_admin
+    first_superuser_email: techv76@gmail.com
+    first_superuser_password: vV$42557406
 cookiecutters_dir: "~/dev/templates/cookiecutter/"

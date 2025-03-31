@@ -31,9 +31,8 @@ ignore = Path {dotfiles}
 ignore = Path {get-docker.sh}
 ignore = Path {.functions}
 ignore = Path {.sources}
+ignore = Path {volumes/portainer/portainer.db}
 label = AWS Server (with Volumes)
 root = /media/martokk/FILES/Servers/aws-server
 root = ssh://ubuntu@aws-server//home/ubuntu
-sshargs = -C
-
-ignore = Path {volumes/portainer/portainer.db}
+sshargs = -i /media/martokk/FILES/Servers/aws-server/.credentials/aws-server.pem -C

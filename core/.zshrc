@@ -38,7 +38,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/home/martokk/development/flutter/bin
+
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -123,8 +124,5 @@ source $ZSH/oh-my-zsh.sh
 # USER CONF HERE ----------------
 
 
-
-
-
-
-
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/martokk/.lmstudio/bin"

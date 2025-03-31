@@ -1,1 +1,79 @@
-[]
+[
+  {
+    "key": "shift+alt+s",
+    "command": "cSpell.addWordToWorkspaceDictionary"
+  },
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "cSpell.addIgnoreWordsToWorkspace"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "coverage-gutters.toggleCoverage"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "-coverage-gutters.toggleCoverage"
+  },
+  {
+    "key": "shift+alt+w",
+    "command": "coverage-gutters.watchCoverageAndVisibleEditors"
+  },
+  {
+    "key": "ctrl+shift+8",
+    "command": "-coverage-gutters.watchCoverageAndVisibleEditors"
+  },
+  {
+    "key": "ctrl+shift+alt+space",
+    "command": "toggleSuggestionFocus",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+space",
+    "command": "-toggleSuggestionFocus",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+space",
+    "command": "vscode-chatgpt.freeText"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "peacock.changeColorToRandom"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-repl.execute",
+    "when": "config.interactiveWindow.executeWithShiftEnter && isCompositeNotebook && activeEditor == 'workbench.editor.repl'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-workbench.action.terminal.sendSequence",
+    "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+  },
+  {
+    "key": "enter",
+    "command": "-python.execInREPLEnter",
+    "when": "!config.interactiveWindow.executeWithShiftEnter && activeEditor == 'workbench.editor.interactive'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.execInREPL",
+    "when": "config.python.REPL.sendToNativeREPL && editorTextFocus && !accessibilityModeEnabled && !jupyter.ownsSelection && !notebookEditorFocused && editorLangId == 'python' && activeEditor != 'workbench.editor.interactive'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "-python.execSelectionInTerminal",
+    "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python' && activeEditor != 'workbench.editor.interactive'"
+  }
+]

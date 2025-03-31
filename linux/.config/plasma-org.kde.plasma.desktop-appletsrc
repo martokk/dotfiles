@@ -6,6 +6,7 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][25]
+ItemGeometries-2194x1234=
 ItemGeometries-3840x2160=
 ItemGeometriesHorizontal=
 activityId=09471140-6699-4ad7-8ae3-fcd865f2465d
@@ -26,6 +27,7 @@ PreloadWeight=0
 [Containments][25][General]
 ToolBoxButtonState=top
 ToolBoxButtonY=46
+positions={"2194x1234":[]}
 
 [Containments][25][Wallpaper][org.kde.image][General]
 Image=file:///media/martokk/FILES/Pictures/Wallpapers/4k/2143.jpg
@@ -74,7 +76,7 @@ DialogHeight=840
 DialogWidth=1120
 
 [Containments][26][Applets][29][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:brave-browser.desktop,applications:appimagekit_92707de1ac05148ddbb1b7672c52e55a-obsidian.desktop,applications:code.desktop,applications:io.qt.Designer.desktop,applications:gitkraken-url-handler.desktop,applications:libreoffice-calc.desktop,applications:com.rafaelmardojai.Blanket.desktop,applications:gimp.desktop,applications:vlc.desktop,applications:kodi.desktop,applications:steam.desktop,applications:org.telegram.desktop.desktop,applications:io.github.NhekoReborn.Nheko.desktop,applications:veracrypt.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:Unison.desktop,applications:piavpn.desktop,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:com.github.wwmm.pulseeffects.desktop,applications:systemsettings.desktop,applications:org.kde.ktouch.desktop,file:///media/martokk/FILES/__INBOX__/SideQuest-0.10.33/sidequest
+launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:org.kde.kate.desktop,applications:net.thunderbird.Thunderbird.desktop,applications:brave-browser.desktop,applications:appimagekit_bf4012f97de94803a667da8672a03643-Cursor.desktop,applications:sqlitebrowser.desktop,applications:com.axosoft.GitKraken.UrlHandler.desktop,applications:libreoffice-calc.desktop,applications:libreoffice-writer.desktop,applications:gimp.desktop,applications:vlc.desktop,applications:com.valvesoftware.Steam.desktop,applications:appimagekit_b32bd08a3b7dd1bf607b28c6109d5f41-Obsidian.desktop,applications:qdirstat.desktop,applications:virtualbox.desktop,applications:unison.desktop,applications:piavpn.desktop,file:///usr/bin/transmission-gtk,applications:org.kde.discover.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:systemsettings.desktop
 maxStripes=1
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
@@ -126,13 +128,6 @@ location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
-[Containments][54][Applets][56]
-immutability=1
-plugin=org.kde.plasma.nightcolorcontrol
-
-[Containments][54][Applets][56][Configuration]
-PreloadWeight=0
-
 [Containments][54][Applets][57]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -148,23 +143,8 @@ plugin=org.kde.plasma.panelspacer
 [Containments][54][Applets][73][Configuration]
 PreloadWeight=0
 
-[Containments][54][Applets][74]
-immutability=1
-plugin=org.kde.plasma.eventcalendar
-
-[Containments][54][Applets][74][Configuration]
-PreloadWeight=30
-
-[Containments][54][Applets][74][Configuration][ConfigDialog]
-DialogHeight=840
-DialogWidth=1120
-
-[Containments][54][Applets][74][Configuration][General]
-clockLine2HeightRatio=0.35
-clockTimeFormat1=h:mm AP  |  ddd, MMM d
-clockTimeFormat2=ddd - MMM d
-v71Migration=true
-v72Migration=true
+[Containments][54][Applets][73][Configuration][General]
+length=120
 
 [Containments][54][Applets][75]
 immutability=1
@@ -177,15 +157,90 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.windowtitle
 
+[Containments][54][Applets][80][Configuration][Appearance]
+customSize=20
+fontSize=13
+midSpace=10
+txt=%a
+
+[Containments][54][Applets][80][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][54][Applets][80][Configuration][General]
 containmentType=Plasma
 
-[Containments][54][Applets][81]
+[Containments][54][Applets][86]
 immutability=1
-plugin=com.github.prayag2.controlcentre
+plugin=org.kde.plasma.cameraindicator
 
-[Containments][54][Applets][81][Configuration]
-PreloadWeight=100
+[Containments][54][Applets][86][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][54][Applets][87]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][54][Applets][87][Configuration]
+PreloadWeight=75
+popupHeight=450
+popupWidth=810
+
+[Containments][54][Applets][87][Configuration][Appearance]
+dateDisplayFormat=BesideTime
+dateFormat=custom
+enabledCalendarPlugins=pimevents
+fontFamily=Noto Sans
+fontWeight=400
+
+[Containments][54][Applets][87][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][54][Applets][89]
+immutability=1
+plugin=org.kde.plasma.timer
+
+[Containments][54][Applets][90]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][54][Applets][90][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][54][Applets][93]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][54][Applets][93][Configuration][General]
+expanding=false
+length=10
+
+[Containments][54][Applets][94]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][54][Applets][94][Configuration][General]
+expanding=false
+length=20
+
+[Containments][54][Applets][95]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][54][Applets][95][Configuration][General]
+expanding=false
+length=30
+
+[Containments][54][Applets][96]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][54][Applets][96][Configuration][General]
+expanding=false
+length=440
 
 [Containments][54][ConfigDialog]
 DialogHeight=109
@@ -195,7 +250,7 @@ DialogWidth=3840
 PreloadWeight=0
 
 [Containments][54][General]
-AppletOrder=80;75;74;73;56;57;81
+AppletOrder=93;80;94;90;75;87;73;86;96;89;95;57
 
 [Containments][58]
 activityId=
@@ -220,7 +275,7 @@ immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][58][Applets][60][Configuration]
-PreloadWeight=0
+PreloadWeight=15
 
 [Containments][58][Applets][61]
 immutability=1
@@ -229,19 +284,15 @@ plugin=org.kde.plasma.keyboardindicator
 [Containments][58][Applets][61][Configuration]
 PreloadWeight=0
 
-[Containments][58][Applets][62]
-immutability=1
-plugin=org.kde.plasma.keyboardlayout
-
 [Containments][58][Applets][62][Configuration]
-PreloadWeight=0
+PreloadWeight=42
 
 [Containments][58][Applets][63]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][58][Applets][63][Configuration]
-PreloadWeight=26
+PreloadWeight=71
 
 [Containments][58][Applets][64]
 immutability=1
@@ -274,6 +325,7 @@ DialogWidth=1120
 
 [Containments][58][Applets][66][Configuration][General]
 currentTab=streams
+migrated=true
 raiseMaximumVolume=true
 showVirtualDevices=true
 volumeFeedback=false
@@ -304,7 +356,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][58][Applets][70][Configuration]
-PreloadWeight=51
+PreloadWeight=31
 
 [Containments][58][Applets][70][Configuration][General]
 showPercentage=true
@@ -330,20 +382,45 @@ plugin=org.kde.plasma.mediacontroller
 [Containments][58][Applets][76][Configuration]
 PreloadWeight=0
 
+[Containments][58][Applets][82]
+immutability=1
+plugin=org.kde.plasma.cameraindicator
+
+[Containments][58][Applets][83]
+immutability=1
+plugin=org.kde.kscreen
+
+[Containments][58][Applets][83][Configuration]
+PreloadWeight=55
+
+[Containments][58][Applets][84][Configuration]
+PreloadWeight=42
+
+[Containments][58][Applets][85][Configuration]
+PreloadWeight=31
+
+[Containments][58][Applets][97]
+immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][58][Applets][97][Configuration]
+PreloadWeight=44
+
 [Containments][58][ConfigDialog]
-DialogHeight=840
-DialogWidth=1120
+DialogHeight=540
+DialogWidth=720
 
 [Containments][58][Configuration]
 PreloadWeight=0
 
 [Containments][58][General]
-extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol
-hiddenItems=Yakuake,org.kde.plasma.bluetooth,org.kde.plasma.printmanager,org.kde.kupapplet,org.kde.plasma.vault
-knownItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol
-shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.devicenotifier
+extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.kscreen,org.kde.kdeconnect,org.kde.plasma.brightness
+hiddenItems=Yakuake,org.kde.kupapplet,org.kde.plasma.vault
+knownItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.kscreen
+shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.devicenotifier,privateinternetaccess,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.clipboard,org.kde.plasma.brightness
 
 [Containments][77]
+ItemGeometries-2194x1234=
 ItemGeometries-3840x2160=
 ItemGeometriesHorizontal=
 activityId=f9063583-dc3d-464f-9b3a-724c3047a9fd
@@ -361,11 +438,15 @@ DialogWidth=1120
 [Containments][77][Configuration]
 PreloadWeight=0
 
+[Containments][77][General]
+positions={"2194x1234":[]}
+
 [Containments][77][Wallpaper][org.kde.image][General]
 Image=file:///media/martokk/FILES/Pictures/Wallpapers/4k/2143.jpg
 SlidePaths=/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [Containments][78]
+ItemGeometries-2194x1234=
 ItemGeometries-3840x2160=
 ItemGeometriesHorizontal=
 activityId=af92cc15-f519-4fd8-bfd1-2be8e8588f94
@@ -382,6 +463,9 @@ DialogWidth=1120
 
 [Containments][78][Configuration]
 PreloadWeight=0
+
+[Containments][78][General]
+positions={"2194x1234":[]}
 
 [Containments][78][Wallpaper][org.kde.image][General]
 Image=file:///media/martokk/FILES/Pictures/Wallpapers/4k/2143.jpg
@@ -408,6 +492,20 @@ PreloadWeight=0
 [Containments][79][Wallpaper][org.kde.image][General]
 Image=file:///media/martokk/FILES/Pictures/Wallpapers/4k/2143.jpg
 SlidePaths=/usr/share/plasma/wallpapers,/usr/share/wallpapers
+
+[Containments][85]
+ItemGeometries-2194x1234=
+ItemGeometriesHorizontal=
+activityId=cb53c5ed-4d51-4940-b7d5-f190a6073f1b
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][85][General]
+positions={"2194x1234":[]}
 
 [ScreenMapping]
 itemsOnDisabledScreens=

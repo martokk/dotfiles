@@ -2,4 +2,7 @@
 FirstRun=false
 
 [Window]
-Height=63
+DynamicTabTitles=true
+Height=60
+ShowSystrayIcon=false
+Width=100

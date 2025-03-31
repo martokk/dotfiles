@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+aiter
 apandada
 autoflake
 autouse
@@ -32,6 +33,7 @@ espanso
 fastapi
 filelock
 flatpak
+foxundermoon
 fullfeedfilter
 gparted
 ifuse

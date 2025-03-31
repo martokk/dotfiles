@@ -31,11 +31,11 @@ ignore = Path {dotfiles}
 ignore = Path {get-docker.sh}
 ignore = Path {.functions}
 ignore = Path {.sources}
-ignore = Name {home-assistant_v2.db-shm}
-ignore = Name {home-assistant_v2.db-wal}
-ignore = Name {auth}
-ignore = Path {auth}
-label = AWS Server (with Volumes)
+ignore = Path {volumes/portainer/portainer.db}
+ignore = Path {volumes/portainer/backups}
+ignore = Path {volumes/hass-config-aws/.storage/auth}
+
+label = AWS Server
 root = /media/martokk/FILES/Servers/aws-server
 root = ssh://ubuntu@aws-server//home/ubuntu
-sshargs = -C
+sshargs = -i /media/martokk/FILES/Servers/aws-server/.credentials/aws-server.pem -C

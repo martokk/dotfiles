@@ -8,13 +8,14 @@ Rows=1
 
 [NightColor]
 Active=true
-LatitudeAuto=43.0382
-LongitudeAuto=-87.91
-NightTemperature=3200
+LatitudeAuto=42.74
+LongitudeAuto=-87.86
+NightTemperature=4100
 
 [Plugins]
 bismuthEnabled=true
-sticky-window-snappingEnabled=true
+krohnkiteEnabled=true
+sticky-window-snappingEnabled=false
 
 [Script-bismuth]
 screenGapBottom=15
@@ -22,3 +23,22 @@ screenGapLeft=15
 screenGapRight=15
 screenGapTop=15
 tileLayoutGap=15
+
+[Script-krohnkite]
+columnsLayoutInitialRotationAngle=3
+maximizeSoleTile=true
+monocleMaximize=false
+screenGapBottom=5
+screenGapLeft=5
+screenGapRight=5
+screenGapTop=5
+tileLayoutGap=5
+
+[Tiling]
+padding=4
+
+[Tiling][b37935f1-e17c-5624-8d67-5d78f2a2c47b]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Xwayland]
+Scale=1.75

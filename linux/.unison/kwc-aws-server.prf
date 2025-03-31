@@ -1,0 +1,17 @@
+# Unison preferences
+ignore = Path {.credentials}
+ignore = Path {.bash_history}
+ignore = Path {.bash_logout}
+ignore = Path {.bashrc}
+ignore = Path {.cache}
+ignore = Path {.profile}
+ignore = Path {.ssh}
+ignore = Path {.sudo_as_admin_successful}
+ignore = Path {.unison}
+label = Kenosha Welcome Center - AWS Server
+root = /media/martokk/FILES/dev/servers/kwc-aws-server/
+root = ssh://ubuntu@kwc-aws-server//home/ubuntu
+sshargs = -i /media/martokk/FILES/dev/servers/kwc-aws-server/.credentials/kwc-aws-server.pem -C
+
+# Synchronize permissions
+perms = 0o755

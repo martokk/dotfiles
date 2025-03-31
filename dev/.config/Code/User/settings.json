@@ -1,10 +1,13 @@
 {
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#8a4700"
+    "titleBar.activeBackground": "#7e0101"
   },
   "workbench.colorTheme": "Community Material Theme Darker",
-
   "peacock.favoriteColors": [
+    {
+      "name": "Red",
+      "value": "#7e0101"
+    },
     {
       "name": "Angular Red",
       "value": "#dd0531"
@@ -40,6 +43,10 @@
     {
       "name": "Vue Green",
       "value": "#42b883"
+    },
+    {
+      "name": "purple",
+      "value": "#7c2ec8"
     }
   ],
   "peacock.affectStatusAndTitleBorders": true,
@@ -49,11 +56,8 @@
   "peacock.affectEditorGroupBorder": true,
   "peacock.affectDebuggingStatusBar": true,
   "peacock.surpriseMeOnStartup": true,
-
   "security.workspace.trust.untrustedFiles": "open",
-
   "explorer.confirmDelete": false,
-
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/__pycache__": true,
@@ -63,9 +67,9 @@
     "**/build_win": true
   },
   "files.associations": {
+    "*.html": "jinja-html",
     "*.yml": "yaml"
   },
-
   "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
   "editor.fontSize": 13,
   "editor.lineHeight": 1.4,
@@ -74,22 +78,50 @@
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
-
   "terminal.integrated.fontFamily": "MesloLGS NF, JetBrains Mono, Consolas, 'Courier New', monospace",
-
   "git.confirmSync": false,
-
-  "cSpell.customDictionaries": {
-    "custom-dictionary-user": {
-      "name": "custom-dictionary-user",
-      "path": "~/.cspell/custom-dictionary-user.txt",
-      "addWords": true,
-      "scope": "user"
-    }
-  },
-  "cSpell.ignoreWords": ["Cdthu", "Parens", "Pwpc", "plushuang", "tabmix"],
+  "cSpell.ignorePaths": [
+    "node_modules", // this will ignore anything the node_modules directory
+    "**/node_modules", // the same for this one
+    "**/node_modules/**", // the same for this one
+    "node_modules/**", // Doesn't currently work due to how the current working directory is determined.
+    "vscode-extension", //
+    ".git", // Ignore the .git directory
+    "*.dll", // Ignore all .dll files.
+    "**/*.dll", // Ignore all .dll files
+    "**/migrations/**", // Ignore all migrations
+    "htmlcov", // Ignore html coverage
+    ".vscode", // Ignore vscode settings
+    "**/.vscode/**", // Ignore vscode settings
+    ".venv", // Ignore virtual environment
+    "typings", // Ignore typings
+    "thunder-tests", // Ignore thunder tests
+    ".mypy_cache", // Ignore mypy cache
+  ],
+  "cSpell.ignoreWords": [
+    "BLCKBX",
+    "CDYM",
+    "amumr",
+    "buildx",
+    "eqxl",
+    "essrt",
+    "hyhcvz",
+    "lofi",
+    "naar",
+    "onupdate",
+    "pysqlite's",
+    "vslb",
+    "vunh",
+    "waarheid",
+    "zoek",
+    "Cdthu",
+    "Parens",
+    "Pwpc",
+    "plushuang",
+    "tabmix"
+  ],
   "cSpell.dictionaries": [
     "python",
     "yaml",
@@ -99,9 +131,7 @@
     "markdown",
     "text"
   ],
-
   "black-formatter.showNotifications": "always",
-
   "better-comments.tags": [
     {
       "tag": "!",
@@ -149,7 +179,6 @@
       "italic": false
     }
   ],
-
   "indentRainbow.colors": [
     "rgba(255,255,64,0.015)",
     "rgba(127,255,127,0.015)",
@@ -157,27 +186,21 @@
     "rgba(79,236,236,0.015)"
   ],
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.7)",
-
   "sourcery.token": "user_7Cdthu0q_RBu6j1MdM4n6L9ElHjQ0yH5iiPPwpcAnQD0HpU65lyp72lfMOk",
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "yaml.format.printWidth": 100,
-
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
-  "python.venvFolders": [".venv"],
+  "python.venvFolders": [
+    ".venv"
+  ],
   "python.terminal.focusAfterLaunch": true,
   "python.formatting.provider": "black",
   "python.analysis.inlayHints.functionReturnTypes": true,
@@ -191,19 +214,30 @@
     "unspecified-encoding": "none"
   },
   "python.linting.enabled": true,
-  "python.linting.pep8Args": ["--max-line-length=100"],
+  "python.linting.pep8Args": [
+    "--max-line-length=100"
+  ],
   "python.linting.pylintPath": "${workspaceFolder}/.venv/bin/pylint",
   "python.linting.pylintEnabled": true,
   "python.linting.pylintArgs": [
     "--extension-pkg-whitelist=PyQt5",
     "--disable=C0111",
-    "--disable=too-many-arguments",
-    "--good-names=e,ex,ui,i,x,y,xx,yy,xy,x0,x1,y0,y1,f"
+    "--disable=too-many-arguments,no-name-in-module",
+    "--good-names=e,ex,ui,i,x,y,xx,yy,xy,x0,x1,y0,y1,f",
+    "--disable=redefined-builtin,invalid-name"
   ],
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": ["--max-line-length=100"],
-  "python.analysis.exclude": ["**/pyqt5_ui.py", "pyqt5_ui.py"],
-  "errorLens.excludePatterns": ["**/pyqt5_ui.py"],
+  "python.linting.flake8Args": [
+    "--max-line-length=100",
+    "--ignore=501"
+  ],
+  "python.analysis.exclude": [
+    "**/pyqt5_ui.py",
+    "pyqt5_ui.py"
+  ],
+  "errorLens.excludePatterns": [
+    "**/pyqt5_ui.py"
+  ],
   "python.linting.ignorePatterns": [
     "**/site-packages/**/*.py",
     ".vscode/*.py",
@@ -213,5 +247,129 @@
   "editor.defaultFormatter": "ms-python.black-formatter",
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  },
+  "PyDocGenAI.pyDocGenAI.env.installed": true,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.advanced": {},
+  "flake8.args": [
+    "--max-line-length=100"
+  ],
+  "chatgpt.authenticationType": "Google Authentication",
+  "git.suggestSmartCommit": false,
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false
+  },
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "chatgpt.gpt3.apiKey": "",
+  "chatgpt.method": "GPT3 OpenAI API Key",
+  "mypy.configFile": "pyproject.toml",
+  "openCoverage.coverageFilePath": "htmlcov/index.html",
+  "mypy.dmypyExecutable": "${workspaceFolder}/.venv/bin/dmypy",
+  "pylint.args": [
+    "--pyproject"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "flake8.importStrategy": "fromEnvironment",
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "cSpell.spellCheckOnlyWorkspaceFiles": true,
+  "coverage-gutters.coverageReportFileName": "htmlcov/index.html",
+  "html.format.contentUnformatted": "{{ , }}, pre, textarea",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "aws.telemetry": false,
+  "code-runner.executorMap": {
+    "python": "$pythonPath -m ${fileBasenameNoExtension}"
+  },
+  "aws.suppressPrompts": {
+    "codeWhispererConnectionExpired": true
+  },
+  "workbench.editorAssociations": {
+    "*.sqlite3": "default"
+  },
+  "cSpell.userWords": [
+    "autoflush",
+    "basecrud",
+    "dateafter",
+    "dateutil",
+    "dbapi",
+    "DOCKERHUB",
+    "dotenv",
+    "feedgen",
+    "httpx",
+    "logsdger",
+    "Mlfdx",
+    "mutablecopy",
+    "nocover",
+    "passlib",
+    "pktc",
+    "playlistend",
+    "playlistreverse",
+    "pydantic",
+    "sessionmaker",
+    "shortuuid",
+    "sqlalchemy",
+    "sqlmodel",
+    "starlette",
+    "Styxhexenhammer",
+    "templating",
+    "tubecast",
+    "typehints",
+    "tzutc",
+    "userdb",
+    "uvicorn",
+    "WMAR",
+    "worldanvil",
+    "ytdlp"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "dart.flutterSdkPath": "/home/martokk/development/flutter"
 }
